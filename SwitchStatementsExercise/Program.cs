@@ -1,24 +1,33 @@
 ﻿Console.WriteLine("What is your favorite subject in school?");
 var favSubject = Console.ReadLine();
 
-switch (favSubject)
-{
-    case "Math":
+switch (favSubject.ToLower())
+{     
+    case "math":
+    case "calculus":
+    case "geometry":
+    case "algebra":
+    case "trigonometry":
         Console.WriteLine("Math is my favorite too!");
         break;
-    case "English":
-        Console.WriteLine("English is very important.");
+    case "english":
+    case "spanish":
+    case "french":
+        Console.WriteLine("Languages are cool.");
         break;
-    case "Science":
-        Console.WriteLine("Science is cool.");
+    case "science":
+    case "physics":
+    case "chemistry":
+        Console.WriteLine("Science is fun!");
         break;
-    case "History":
+    case "history":
         Console.WriteLine("History is facinating.");
         break;
-    case "PE":
-        Console.WriteLine("PE is a popular choice for many.");
+    case "pe":
+    case "gym":
+        Console.WriteLine("Who doesn't love gym class?!");
         break;
     default:
-        Console.WriteLine($"{favSubject} is a unique choice.");
+        Console.WriteLine($"I don't have a witty saying for {favSubject}.");
         break;
 }
